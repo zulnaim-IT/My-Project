@@ -30,7 +30,6 @@
 .hero-name {
   font-size: 4.5rem;
   font-weight: 700;
-  color: var(--text-primary);
   margin-bottom: 1rem;
   line-height: 1.1;
   letter-spacing: -1px;

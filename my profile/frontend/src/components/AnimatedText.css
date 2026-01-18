@@ -12,10 +12,6 @@
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #4ade80 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* Dark mode gradient */
@@ -24,6 +20,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
 }
 
 /* Light mode gradient */
@@ -32,6 +29,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
 }
 
 .animated-text .char {
