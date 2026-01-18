@@ -2,6 +2,14 @@
   "version": 2,
   "buildCommand": "cd \"my profile/frontend\" && npm install && npm run build",
   "outputDirectory": "my profile/frontend/dist",
+  "env": [
+    "MONGODB_URI"
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
