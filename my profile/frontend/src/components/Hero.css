@@ -28,11 +28,13 @@
 }
 
 .hero-name {
-  font-size: 4.5rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.1;
   letter-spacing: -1px;
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-tagline {

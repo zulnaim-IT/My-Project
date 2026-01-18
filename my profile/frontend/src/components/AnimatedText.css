@@ -1,9 +1,9 @@
 .animated-text {
   margin: 0;
-  display: inline-block;
+  display: block;
   font-size: inherit;
   font-weight: inherit;
-  color: inherit;
+  white-space: nowrap;
 }
 
 .animated-text.hero-name {
@@ -12,24 +12,24 @@
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 1rem;
+  display: block;
+  white-space: nowrap;
 }
 
 /* Dark mode gradient */
-[data-theme="dark"] .animated-text.hero-name {
-  background: linear-gradient(135deg, #4ade80 0%, #ffffff 100%);
+[data-theme="dark"] .animated-text.hero-name .char {
+  background: linear-gradient(90deg, #4ade80 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: inline-block;
 }
 
 /* Light mode gradient */
-[data-theme="light"] .animated-text.hero-name {
-  background: linear-gradient(135deg, #16a34a 0%, #000000 100%);
+[data-theme="light"] .animated-text.hero-name .char {
+  background: linear-gradient(90deg, #16a34a 0%, #000000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: inline-block;
 }
 
 .animated-text .char {
