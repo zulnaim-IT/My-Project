@@ -10,7 +10,7 @@ import './App.css'
 function App() {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme')
-    return savedTheme || 'light'
+    return savedTheme || 'dark'
   })
 
   useEffect(() => {

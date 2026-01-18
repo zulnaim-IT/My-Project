@@ -28,7 +28,8 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--border);
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  box-shadow: 0 0 10px var(--green-glow);
 }
 
 .experience-item {
@@ -58,8 +59,9 @@
 }
 
 .experience-content:hover {
-  box-shadow: 0 8px 24px var(--shadow);
+  box-shadow: 0 8px 24px var(--shadow), 0 0 20px var(--green-glow);
   transform: translateX(5px);
+  border-color: var(--accent);
 }
 
 .experience-type {

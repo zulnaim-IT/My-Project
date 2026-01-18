@@ -9,25 +9,29 @@
   --bg-secondary: #fafafa;
   --text-primary: #000000;
   --text-secondary: #444444;
-  --accent: #000000;
-  --accent-hover: #333333;
+  --accent: #00cc6a;
+  --accent-hover: #00ff88;
   --border: #e0e0e0;
   --card-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.08);
+  --shadow: rgba(0, 204, 106, 0.15);
   --overlay: rgba(255, 255, 255, 0.95);
+  --green-glow: rgba(0, 204, 106, 0.08);
+  --green-glow-strong: rgba(0, 204, 106, 0.2);
 }
 
 [data-theme="dark"] {
   --bg-primary: #000000;
   --bg-secondary: #0a0a0a;
   --text-primary: #ffffff;
-  --text-secondary: #bbbbbb;
-  --accent: #ffffff;
-  --accent-hover: #cccccc;
-  --border: #222222;
-  --card-bg: #0a0a0a;
-  --shadow: rgba(255, 255, 255, 0.05);
+  --text-secondary: #a0a0a0;
+  --accent: #00ff88;
+  --accent-hover: #00ff66;
+  --border: #1a1a1a;
+  --card-bg: #0d0d0d;
+  --shadow: rgba(0, 255, 136, 0.15);
   --overlay: rgba(0, 0, 0, 0.95);
+  --green-glow: rgba(0, 255, 136, 0.1);
+  --green-glow-strong: rgba(0, 255, 136, 0.2);
 }
 
 body {
@@ -40,6 +44,27 @@ body {
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
   line-height: 1.6;
+  position: relative;
+}
+
+body {
+  background: 
+    radial-gradient(ellipse at top, var(--green-glow) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, var(--green-glow) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, var(--green-glow) 0%, transparent 50%),
+    var(--bg-primary);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+[data-theme="dark"] body {
+  background: 
+    radial-gradient(ellipse at top, var(--green-glow) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, var(--green-glow) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, var(--green-glow) 0%, transparent 50%),
+    #000000;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 code {

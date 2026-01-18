@@ -39,7 +39,11 @@
   background: var(--accent);
   color: var(--bg-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow);
+  box-shadow: 0 4px 12px var(--shadow), 0 0 10px var(--green-glow);
+}
+
+[data-theme="dark"] .skill-tag:hover {
+  color: #000000;
 }
 
 @media (max-width: 768px) {
