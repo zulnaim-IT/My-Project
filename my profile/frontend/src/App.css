@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+main {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app {
+    overflow-x: hidden;
+  }
+}
