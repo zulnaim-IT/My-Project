@@ -4,16 +4,18 @@
   font-size: inherit;
   font-weight: inherit;
   white-space: nowrap;
+  font-family: 'Courier New', monospace;
 }
 
 .animated-text.hero-name {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: 0.1em;
   margin: 0;
   display: block;
   white-space: nowrap;
+  font-family: 'Courier New', monospace;
 }
 
 /* Dark mode - Cyan color */
