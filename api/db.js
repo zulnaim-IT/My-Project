@@ -16,7 +16,7 @@ async function connectDB() {
       bufferCommands: false,
     };
 
-    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/myprofile';
+    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://Vercel-Admin-my-profile:o9IS5r8HzoImmX1Z@my-profile.ci2ja4b.mongodb.net/?retryWrites=true&w=majority';
     
     cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
       return mongoose;
