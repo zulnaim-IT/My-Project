@@ -22,7 +22,7 @@ const Contact = () => {
     setStatus('sending')
 
     try {
-      const response = await axios.post('/api/contact', formData)
+      const response = await axios.post('http://localhost:3001/api/contact', formData)
       if (response.data.success) {
         setStatus('success')
         setFormData({ name: '', email: '', message: '' })
@@ -30,6 +30,7 @@ const Contact = () => {
       }
     } catch (error) {
       setStatus('error')
+      console.error('Error:', error)
       setTimeout(() => setStatus(''), 3000)
     }
   }
