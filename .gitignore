@@ -26,9 +26,10 @@ lerna-debug.log*
 # Vercel
 .vercel
 
-# Environment variables
+# Environment variables - NEVER commit these!
 .env
 .env*.local
+.env.production
 
 # IDE
 .vscode/
@@ -36,3 +37,16 @@ lerna-debug.log*
 *.swp
 *.swo
 *~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Cache
+.cache/
+temp/
+tmp/
+
+# Temporary files
+*.tmp
+*.bak
