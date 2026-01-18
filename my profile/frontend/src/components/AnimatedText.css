@@ -1,11 +1,9 @@
 .animated-text {
   margin: 0;
-  display: inline-block;
+  display: block;
   font-size: inherit;
   font-weight: inherit;
-  white-space: normal;
-  max-width: 600px;
-  word-spacing: 9999px;
+  white-space: nowrap;
 }
 
 .animated-text.hero-name {
@@ -13,11 +11,9 @@
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -1px;
-  margin-bottom: 1rem;
-  display: inline-block;
-  white-space: normal;
-  max-width: 600px;
-  word-spacing: 9999px;
+  margin: 0;
+  display: block;
+  white-space: nowrap;
 }
 
 /* Dark mode - Cyan color */
