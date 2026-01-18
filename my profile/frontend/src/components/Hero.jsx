@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-greeting">Hi, I'm</h1>
-          <AnimatedText text="Muhammad Zulnaim" />
+          <AnimatedText text="Muhammad Zulnaim" className="hero-name" />
           <p className="hero-tagline">
             Junior Software Developer | Bachelor of Information Systems (Big Data Analytics)
           </p>

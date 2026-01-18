@@ -16,11 +16,14 @@
 }
 
 .contact-container {
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 100%;
 }
 
 .contact-form {
+  flex: 1;
   background: var(--card-bg);
   padding: 2.5rem;
   border-radius: 8px;
@@ -107,4 +110,20 @@
   background: var(--bg-secondary);
   color: var(--text-primary);
   border: 1px solid var(--border);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
 }

@@ -6,7 +6,7 @@ const Header = ({ theme, toggleTheme }) => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>Muhammad Zulnaim</h1>
+          <h1>MY PROFILE</h1>
         </div>
         <nav className="nav">
           <a href="#home">Home</a>

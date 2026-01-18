@@ -6,6 +6,34 @@
   color: inherit;
 }
 
+.animated-text.hero-name {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #4ade80 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Dark mode gradient */
+[data-theme="dark"] .animated-text.hero-name {
+  background: linear-gradient(135deg, #4ade80 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Light mode gradient */
+[data-theme="light"] .animated-text.hero-name {
+  background: linear-gradient(135deg, #16a34a 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .animated-text .char {
   display: inline-block;
   animation: revealText 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
