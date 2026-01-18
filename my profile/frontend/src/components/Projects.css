@@ -28,6 +28,8 @@
   box-shadow: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -68,6 +70,9 @@
 
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-content h3 {
@@ -90,7 +95,7 @@
 
 .project-btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;
   padding: 10px 20px;
   background-color: #ffffff;
   color: #000000;
