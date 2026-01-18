@@ -1,5 +1,6 @@
 import './Hero.css'
 import AnimatedText from './AnimatedText'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -22,6 +23,26 @@ const Hero = () => {
           <a href="/resume.pdf" className="resume-btn" target="_blank" rel="noopener noreferrer">
             View Resume
           </a>
+          <div className="hero-social-links">
+            <a 
+              href="https://github.com/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hero-social-link"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+            <a 
+              href="https://linkedin.com/in/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hero-social-link"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
         <div className="hero-image">
           <img 

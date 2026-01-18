@@ -45,6 +45,24 @@
   }
 }
 
+/* Cursor animation for last sentence */
+.animated-text.hero-name:last-child::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 0.1em;
+  animation: blink 1s infinite;
+  color: inherit;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 /* Alternative: Clean slide from left */
 @keyframes slideFromLeft {
   from {
