@@ -1,9 +1,16 @@
 .skills {
   padding: 6rem 0;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+[data-theme="dark"] .skills {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+.skills-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
 }
 
 .section-title {
@@ -15,11 +22,10 @@
   letter-spacing: -1px;
 }
 
-.skills-container {
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
   margin-top: 2rem;
 }
 
@@ -48,12 +54,11 @@
 
 @media (max-width: 768px) {
   .skills {
-    padding: 4rem 1rem;
+    padding: 4rem 0;
   }
 
   .section-title {
     font-size: 2rem;
-    text-align: center;
   }
 
   .skill-tag {
