@@ -22,7 +22,11 @@ const Contact = () => {
     setStatus('sending')
 
     try {
-      const response = await axios.post('http://localhost:3001/api/contact', formData)
+      const apiUrl = import.meta.env.VITE_API_URL
+        ? `${import.meta.env.VITE_API_URL}/api/contact`
+        : '/api/contact'
+      
+      const response = await axios.post(apiUrl, formData)
       if (response.data.success) {
         setStatus('success')
         setFormData({ name: '', email: '', message: '' })
