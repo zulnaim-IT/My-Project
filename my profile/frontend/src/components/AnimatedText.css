@@ -1,0 +1,57 @@
+.animated-text {
+  margin: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.animated-text .char {
+  display: inline-block;
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: calc(var(--char-index) * 0.05s);
+  opacity: 0;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alternative animation: typewriter effect */
+@keyframes typewriter {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animated-text.typewriter .char {
+  animation: typewriter 0.3s ease-out forwards;
+  animation-delay: calc(var(--char-index) * 0.05s);
+}
+
+/* Alternative animation: fade and scale */
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animated-text.fade-scale .char {
+  animation: fadeScale 0.5s ease-out forwards;
+  animation-delay: calc(var(--char-index) * 0.06s);
+}

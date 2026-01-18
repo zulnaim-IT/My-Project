@@ -1,4 +1,5 @@
 import { FaMoon, FaSun } from 'react-icons/fa'
+import AnimatedText from './AnimatedText'
 import './Header.css'
 
 const Header = ({ theme, toggleTheme }) => {
@@ -6,7 +7,7 @@ const Header = ({ theme, toggleTheme }) => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>Muhammad Zulnaim</h1>
+          <AnimatedText text="Muhammad Zulnaim" />
         </div>
         <nav className="nav">
           <a href="#home">Home</a>
