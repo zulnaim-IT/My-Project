@@ -16,8 +16,12 @@ async function connectDB() {
       bufferCommands: false,
     };
 
-    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://Vercel-Admin-my-profile:o9IS5r8HzoImmX1Z@my-profile.ci2ja4b.mongodb.net/?retryWrites=true&w=majority';
+    const MONGODB_URI = process.env.MONGODB_URI;
     
+    if (!MONGODB_URI) {
+      throw new Error('MONGODB_URI environment variable is not set');
+    }
+
     cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
       return mongoose;
     });
