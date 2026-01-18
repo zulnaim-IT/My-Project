@@ -83,7 +83,7 @@ cd backend
 npm run start:dev
 ```
 
-The backend will run on `http://localhost:3001`
+
 
 ### Start Frontend Development Server
 
@@ -92,13 +92,13 @@ cd frontend
 npm run dev
 ```
 
-The frontend will run on `http://localhost:3000`
+
 
 ## Configuration
 
 ### MongoDB Connection
 
-By default, the backend connects to MongoDB at `mongodb://localhost:27017/myprofile`.
+
 
 To use a different MongoDB instance (e.g., MongoDB Atlas), update the connection string in `backend/src/app.module.ts`:
 
@@ -108,11 +108,9 @@ MongooseModule.forRoot('your-mongodb-connection-string', {
 }),
 ```
 
-Or use an environment variable:
 
-```typescript
-MongooseModule.forRoot(process.env.MONGODB_URI || 'mongodb://localhost:27017/myprofile'),
-```
+
+
 
 ## Project Structure
 
@@ -167,7 +165,7 @@ Edit `frontend/src/components/Achievements.jsx` to customize your achievements:
 Contact messages are stored in MongoDB. You can:
 
 1. Use MongoDB Compass to view messages
-2. Access the API endpoint: `GET http://localhost:3001/api/contact`
+
 3. Create an admin panel (future enhancement)
 
 ## API Endpoints
