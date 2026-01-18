@@ -16,17 +16,17 @@
   white-space: nowrap;
 }
 
-/* Dark mode gradient */
+/* Dark mode gradient - Cyan to Purple (modern & contrasts well with dark green) */
 [data-theme="dark"] .animated-text.hero-name .char {
-  background: linear-gradient(90deg, #4ade80 0%, #ffffff 100%);
+  background: linear-gradient(90deg, #06b6d4 0%, #a855f7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Light mode gradient */
+/* Light mode gradient - Teal to Blue (professional) */
 [data-theme="light"] .animated-text.hero-name .char {
-  background: linear-gradient(90deg, #16a34a 0%, #000000 100%);
+  background: linear-gradient(90deg, #0d9488 0%, #0369a1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

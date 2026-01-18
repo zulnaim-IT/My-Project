@@ -27,14 +27,18 @@
   letter-spacing: 0.5px;
 }
 
+.hero-name-wrapper {
+  margin-bottom: 1rem;
+}
+
 .hero-name {
   font-size: 6rem;
   font-weight: 700;
-  margin-bottom: 1rem;
   line-height: 1.1;
   letter-spacing: -1px;
   display: block;
   white-space: nowrap;
+  margin: 0;
 }
 
 .hero-tagline {
