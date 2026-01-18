@@ -1,10 +1,6 @@
 .education {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-}
-
-[data-theme="dark"] .education {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  background: var(--bg-primary);
 }
 
 .education-container {
