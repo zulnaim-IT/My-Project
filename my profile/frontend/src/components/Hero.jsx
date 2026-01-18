@@ -1,4 +1,5 @@
 import './Hero.css'
+import AnimatedText from './AnimatedText'
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-greeting">Hi, I'm</h1>
-          <h1 className="hero-name">Muhammad Zulnaim</h1>
+          <AnimatedText text="Muhammad Zulnaim" />
           <p className="hero-tagline">
             Junior Software Developer | Bachelor of Information Systems (Big Data Analytics)
           </p>
