@@ -1,9 +1,11 @@
 .animated-text {
   margin: 0;
-  display: block;
+  display: inline-block;
   font-size: inherit;
   font-weight: inherit;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 600px;
+  word-spacing: 9999px;
 }
 
 .animated-text.hero-name {
@@ -12,19 +14,21 @@
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 1rem;
-  display: block;
-  white-space: nowrap;
+  display: inline-block;
+  white-space: normal;
+  max-width: 600px;
+  word-spacing: 9999px;
 }
 
 /* Dark mode - Cyan color */
 [data-theme="dark"] .animated-text.hero-name .char {
-  color: #06b6d4;
+  color: #099471;
   font-weight: 700;
 }
 
 /* Light mode - Black color */
 [data-theme="light"] .animated-text.hero-name .char {
-  color: #000000;
+  color: #05140b;
   font-weight: 700;
 }
 

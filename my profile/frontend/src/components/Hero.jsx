@@ -8,8 +8,7 @@ const Hero = () => {
         <div className="hero-content">
           <h1 className="hero-greeting">Hi, I'm</h1>
           <div className="hero-name-wrapper">
-            <AnimatedText text="MUHAMMAD" className="hero-name" />
-            <AnimatedText text="ZULNAIM" className="hero-name" />
+            <AnimatedText text="MUHAMMAD ZULNAIM" className="hero-name" />
           </div>
           <p className="hero-tagline">
             Junior Software Developer | Bachelor of Information Systems (Big Data Analytics)
