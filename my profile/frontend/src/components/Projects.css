@@ -95,8 +95,8 @@
 
 .project-btn {
   display: inline-block;
-  margin-top: auto;
-  padding: 10px 20px;
+  margin-top: 0.8rem;
+  padding: 10px 10px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 8px;
