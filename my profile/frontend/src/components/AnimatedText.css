@@ -16,20 +16,27 @@
   white-space: nowrap;
 }
 
-/* Dark mode gradient - Cyan to Purple (modern & contrasts well with dark green) */
+/* Dark mode - Neon Green with dark green shadow glow */
 [data-theme="dark"] .animated-text.hero-name .char {
-  background: linear-gradient(90deg, #06b6d4 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #00ff41;
+  text-shadow: 
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #164e3b,
+    0 0 40px #164e3b,
+    0 0 50px #0f3f2f;
+  font-weight: 700;
 }
 
-/* Light mode gradient - Teal to Blue (professional) */
+/* Light mode - Dark with bright neon glow */
 [data-theme="light"] .animated-text.hero-name .char {
-  background: linear-gradient(90deg, #0d9488 0%, #0369a1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
+  text-shadow: 
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #86efac,
+    0 0 40px #86efac;
+  font-weight: 700;
 }
 
 .animated-text .char {
