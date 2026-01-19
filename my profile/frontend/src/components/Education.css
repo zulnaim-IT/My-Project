@@ -1,6 +1,10 @@
 .education {
   padding: 6rem 0;
-  background: var(--bg-primary);
+  background: #000000;
+}
+
+[data-theme="light"] .education {
+  background: #ffffff;
 }
 
 .education-container {

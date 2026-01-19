@@ -1,28 +1,32 @@
 .skills {
   padding: 6rem 0;
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
+}
+
+[data-theme="light"] .skills {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
 }
 
 .skills-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 2rem;
 }
 
 .section-title {
   font-size: 3rem;
   font-weight: 700;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--text-primary);
   letter-spacing: -1px;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  display: block;
+  width: 100%;
 }
 
 .skill-tag {
