@@ -24,7 +24,7 @@ const Hero = () => {
           </a>
           <div className="hero-social-links">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/zulnaim-IT" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hero-social-link"
@@ -33,7 +33,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/muhammad-zulnaim/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hero-social-link"
